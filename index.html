@@ -9,62 +9,64 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+        }
 
         body {
-          min-height: 100vh;
-          font-family: 'Poppins', sans-serif;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          background: #f8fafc;
-          color: #000;
-          text-align: center;
-          padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* vertical centering for main */
+            align-items: center;     /* horizontal centering */
+            font-family: 'Poppins', sans-serif;
+            background: #f8fafc;
+            color: #000;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        main {
+            flex: 1; /* take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         h1 {
-          font-size: 3rem;
-          font-weight: 500;
-          color: #2563eb;
-          margin-bottom: 1rem;
+            font-size: 3rem;
+            font-weight: 500;
+            color: #2563eb;
+            margin-bottom: 1rem;
         }
 
         p {
-          font-size: 1.1rem;
-          color: #444;
-          max-width: 480px;
-          margin: 0 auto 2rem;
+            font-size: 1.1rem;
+            color: #444;
+            max-width: 480px;
         }
 
         footer {
-          margin-top: auto;
-          color: #666;
-          font-size: 0.9rem;
-          padding: 1rem 0;
+            color: #666;
+            font-size: 0.9rem;
+            padding: 1rem 0;
         }
 
-        /* Responsive tweaks for mobile */
+        /* Responsive tweaks */
         @media (max-width: 768px) {
-          h1 {
-            font-size: 2.2rem;
-          }
-
-          p {
-            font-size: 1rem;
-            max-width: 90%;
-          }
+            h1 { font-size: 2.2rem; }
+            p { font-size: 1rem; max-width: 90%; }
         }
 
         @media (max-width: 480px) {
-          h1 {
-            font-size: 1.8rem;
-          }
-
-          p {
-            font-size: 0.95rem;
-          }
+            h1 { font-size: 1.8rem; }
+            p { font-size: 0.95rem; }
         }
     </style>
 </head>
@@ -76,5 +78,6 @@
 </main>
 
 <footer>© 2025 Legentree Technologies Pvt Ltd. All rights reserved.</footer>
+
 </body>
 </html>
