@@ -12,7 +12,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-          height: 100vh;
+          min-height: 100vh;
           font-family: 'Poppins', sans-serif;
           display: flex;
           flex-direction: column;
@@ -21,8 +21,7 @@
           background: #f8fafc;
           color: #000;
           text-align: center;
-          overflow: hidden;
-          position: relative;
+          padding: 1rem;
         }
 
         h1 {
@@ -40,10 +39,32 @@
         }
 
         footer {
-          position: absolute;
-          bottom: 25px;
+          margin-top: auto;
           color: #666;
           font-size: 0.9rem;
+          padding: 1rem 0;
+        }
+
+        /* Responsive tweaks for mobile */
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 2.2rem;
+          }
+
+          p {
+            font-size: 1rem;
+            max-width: 90%;
+          }
+        }
+
+        @media (max-width: 480px) {
+          h1 {
+            font-size: 1.8rem;
+          }
+
+          p {
+            font-size: 0.95rem;
+          }
         }
     </style>
 </head>
